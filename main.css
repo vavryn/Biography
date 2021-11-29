@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 2%;
+}
+
+body {
+  color: black;
+  font-weight: 300;
+}
+
+.sec h3 {
+  text-align: center;
+}
+
+.hero
+{
+  pad: 900px;
+}
+
+.hero-hey {
+  font-weight: 300;
+  font-size: 37px;
+  position: absolute;
+  display: flex;
+  color: white;
+  line-height: 1.3;
+  top: 208px;
+  right: 100px;
+
+}
+
+.hero_describtion
+{
+  color: white;
+  margin: 20px;
+  font-size: 25px;
+  line-height: 1;
+  position: absolute;
+  top: 300px;
+  right: 160px;
+}
+
+.sec01 {
+  padding-top: 130px;
+}
+
+.sec02,
+.sec03,
+.sec04 {
+  padding: 30px 0px 20px 0px;
+}
+
+header /*область текста с картинкой*/ {
+  background-image: url("Picture/user.17.png");
+  height: 765px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  line-height: 120.9px;
+}
+
+.sec p {
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 150.9%;
+}
+
+.sec h3 {
+  font-style: unset;
+  margin: 20px;
+  font-size: 35px;
+}
