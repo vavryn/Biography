@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0.1px;
+}
+
+.main
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif ;
+}
+
+.main h1
+{
+    position: relative;
+    height: auto;
+    width: 500px;
+    left: 50%;
+    transform: translateX(-50% );
+    margin: 5% 0 2% 0;
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: 650;
+    letter-spacing: 1.5px;
+    padding-top: 20px;
+}
+
+.main p
+{
+    position: relative;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.main .gallery
+{
+    position: relative;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    padding: 45px 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2vh;
+    grid-auto-flow:dense;
+     
+}
+
+.main .gallery .img
+{
+    position: relative;    
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main .gallery .img:first-child
+{
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.main .gallery .img:nth-child(2n+3)
+{
+    grid-row-start:span 2;
+}
+
+.main .gallery .img:nth-child(4n+5)
+{
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+
+.main .gallery .img:nth-child(6n+7)
+{
+    grid-row-start:span 1;
+}
+
+.main .gallery .img:nth-child(8n+9)
+{ 
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+}
+
+.main .gallery .img img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5) grayscale(0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.main .gallery .img:hover img
+{
+    filter: brightness(1) grayscale(0);
+}
+
+@media only screen and (max-width: 768px)
+{
+    .main h1
+    {
+        padding-top: 50px ;
+        font-size: 40px;
+        width: 400px;
+    }
+    .main p
+    {
+        font-size: 1.2em;
+    }
+    .main .gallery
+    {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    
+
+} 
+
+@media only screen and (max-width: 425px)
+{
+    .main h1
+    {
+        padding-top: 80px ;
+        font-size: 30px;
+        width: 300px;
+    }
+    .main p
+    {
+        font-size: 0.89em;
+    }
+    .main .gallery
+    {
+        display: block;
+    }
+
+    .main .gallery .img
+    {
+        display:block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main .gallery .img img
+    {
+        display:block;
+        filter: brightness(1);
+        
+    }
+
+    .nav__list
+    {
+        display: flex;
+        font-size: 16px;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        height: 2px;
+    }
+
+    .nav
+    {
+        height: 3rem;
+        text-align: center;
+    }
+
+
+
+} 
+
+/* end main */
+/* start nav */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background: #fff;
+}
+
+
+.nav {
+    height: 5rem;
+    width: 100%;
+    display: block;
+    justify-content: flex-start;
+    z-index: 10;
+    font-weight: 300;
+    transition: 0.2s ease-in-out;
+    position: fixed;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -60px;
+    margin-right: 50px;
+    padding-bottom: 225px;
+}
+
+.nav__link {
+    color: inherit;
+    text-decoration: none;
+    margin-right: 50px;
+    position: relative;
+    font-family: "Raleway", sans-serif;
+    padding: 16px 0;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    font-weight: 700;
+    transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    color: #111;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav__link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s, transform 0.2s ease-out;
+}
+
+.nav__link:active::before {
+    background-color: #000;
+}
+
+.nav__link:hover::before,
+.nav__link:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+.logo {
+    padding: 3.5vh 5vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: rgb(22, 8, 8);
+    width: 25rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+}
+
+.smalllogo {
+    display: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
