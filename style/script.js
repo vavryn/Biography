@@ -61,5 +61,7 @@ function changeMode() {
         footer.classList.remove("dark-footer");
         footer.classList.add("light-footer");
 
+        work.classList.remove("dark-workandexperience");
+        work.classList.add("light-workandexperience");
     }
 }
