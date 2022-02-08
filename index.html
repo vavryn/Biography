@@ -7,11 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-  <link href='main.css' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="script.js"></script>
-
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link href='style/theme/main.css' id="theme" rel='stylesheet' type='text/css'>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
   <title>CV | Владимир Вавринчук</title>
 
 </head>
@@ -19,55 +22,142 @@
 
 <body>
 
-
-  <header>
-    <div class="hero">
-      <div class="hero-hey">
-        <h1><span>Привет, я Вова</span></h1>
-      </div>
-      <div class="hero_describtion">
-        <p>Программист, веб-дизайнер, <br> психолог, фотограф, копирайтер, <br> ретушер и хороший собеседник.</p>
-      </div>
-      <div class="hero-desc">
-
-      </div>
+  <header id="header">
+    <div class="smalllogo">
+      <a onclick="changeMode()" class="logolink">
+        Привет, я Вова
+      </a>
     </div>
+    <button class="nav-toggle">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav" id="navbar">
+
+      <ul class="nav__list" id="navlinkitems">
+        <a style="position: absolute; left: 30px; top:20px;" onclick="changeMode()">
+          <h2> Привет, я Вова </h2>
+        </a>
+        <li class="nav__item">
+          <a href="#home-section" class="nav__link" id="home">Главная</a>
+        </li>
+        <li class="nav__item">
+          <a href="#about-section" class="nav__link">Скиллы</a>
+        </li>
+        <li class="nav__item">
+          <a href="#skills-section" class="nav__link" id="service">Работа</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contacts-section" class="nav__link" id="contact">Связь</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="/Photosession.html" class="nav__link" id="contact">Фотосессии</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
 
-  <div class="container">
-    <section class="sec sec01" id="sec01">
-      <h3>Программирование и веб-дизайн</h3>
-      <p>Программирование пришло в мою жизнь когда поступил в колледж. На данный момент, я разрабатываю
-        десктопные-приложение на С#, занимаюсь
-        Front-end разработкой и учу Back-end, чтобы в дальнейшем стать Full-Stack разработчиком. </p>
-    </section>
-    <section class="sec sec02" id="sec02">
-      <h3>Психолог</h3>
-      <p>Психологией занимаюсь больше двух лет. Уверяю, я не знаю важных терминов, который должен знать каждый доктор,
-        По большей части я работаю с практикой основаной на теории, которую пишут в научных книгах. Я
-        любитель,
-        который может помочь людям.</p>
-    </section>
+  <section>
+    <div style="background-color: black ;">
+      <img class="face" src="Picture/1.png" alt="" id="myImg">
+    </div>
+    <div id="textonpicture" class="textonpicture-light">
+      <h1> Привет, я Вова </h1>
+      <p>Программист, веб-дизайнер, психолог, <br> фотограф, копирайтер, ретушер <br> и хороший собеседник.</p>
+    </div>
+  </section>
 
-    <section class="sec sec03" id="sec03">
-      <h3>Фотограф и ретушер</h3>
-      <p>Камера на которую я фотографирую и снимаю видео - Nikon D5100. Фотографией занимаюсь ~ 3 года. Фотографирую
-        моделей и
-        магазины для рекламы. Обрабатываю работы в Adobe Photoshop CC и Adobe Premier Pro CC. Работы с фотосессий есть в
-        моем
-        инстаграме.
-      </p>
-    </section>
+  <section id="about" class="light-about">
+    <div class="container">
+      <div class="info">
+        <h2>Программирование и веб-дизайн</h2>
+        <p> Работаю с Figma и VS Code. Закончил стажировку в компании RexSoft. Я гумманитарий, поэтому я не работаю с
+          back-end.
+          Front-end разработкой занимаюсь больше года.
+          Свой
+          первый
+          сайт сделал в 16 лет.</p>
+      </div>
+      <div class="info">
+        <h2>Психолог</h2>
+        <p>Психологией занимаюсь больше двух лет. Я не знаю важные термины, который должен знать каждый доктор,
+          потому что
+          я любитель. Работаю с практикой основаной на теории, которую пишут научных книгах. Я
+          любитель,
+          который может помочь людям.</p>
+      </div>
+      <div class="info">
+        <h2>Фотограф и ретушер</h2>
+        <p>Камера на которую я фотографирую и снимаю видео - Nikon D5100. Фотографией занимаюсь ~ 3 года. Фотографирую
+          моделей, здание, салоны и
+          магазины для рекламы. Обрабатываю работы в Adobe Photoshop CC и Adobe Premier Pro CC. Фотографии можете
+          увидеть в моем портфолио.</p>
+      </div>
+      <div class="info">
+        <h2>Образования</h2>
+        <p>Младший бакалавр программной инженирии от Хмельницкого Политихничего колледжа. На этом не буду
+          останавливаться. </p>
+      </div>
+    </div>
+  </section>
 
-    <section class="sec sec04" id="sec04">
-      <h3>Образование</h3>
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque quod minus at, nesciunt dicta
-        voluptatem doloremque ex maiores autem ab voluptatibus iure sit eius, ipsa cupiditate mollitia qui accusantium
-        ipsam numquam minima. At eligendi quia qui, enim dolorem veniam?
-      </p>
-    </section>
-  </div>
+
+  <section>
+    <div class = "light-workandexperience" id = "work">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="work">
+              <h2> Работа и опыт</h2>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <ul>
+              <div class="list-exp">
+                <li>
+                  <p> Один из моих
+                    сайтов стал сайт-визиткой для локального события в городе - MyFest </p>
+                </li>
+              </div>
+              <div class="list-exp">
+                <li>
+                  <p> Написал сайт и программу для PC для бесплатного изучения языка - EasyGrammar </p>
+                </li>
+              </div>
+              <div class="list-exp">
+                <li>
+                  <p> Писал статьи от компании Art Sites для продвижения интернет-магазина. Увеличил покупки товаров с
+                    помощью SEO-searching на 27.93% </p>
+                </li>
+              </div>
+              <div class="list-exp">
+                <li>
+                  <p> Делал комерчискую фотосессию салону красоты. Реклама разлетелась по социальным сетям и увеличила
+                    количество клиентов.</p>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="light-footer" id="footer">
+    <div class="social">
+      <a href="https://www.facebook.com/profile.php?id=100014713959867" class="light-link" target="_parent" id="link1">
+        <span class="fa fa-facebook-square"></span></a>
+      <a href="https://twitter.com/elatedkrai" class="light-link" target="_parent" id="link2"><span
+          class="fa fa-twitter"></span></a>
+      <a href="https://www.instagram.com/elatedkrai/" class="light-link" target="_parent" id="link3"><span
+          class="fa fa-instagram" id="link"></span></a>
+      <a href="https://github.com/ElatedKrai" class="light-link" target="_parent" id="link4"><span class="fa fa-github"
+          id="link"></span></a>
+    </div>
+  </footer>
+
+  <script src="style/script.js"></script>
 </body>
 
 </html>
