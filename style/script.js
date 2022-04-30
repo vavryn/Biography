@@ -1,9 +1,3 @@
-
-window.onscroll = function () { scrollFunction() };
-function scrollFunction() {
-    document.getElementById("navbar").style.background = "#fff";
-}
-
 const navToggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".nav__link");
 
@@ -23,8 +17,8 @@ function changeMode() {
     var about = document.getElementById("about");
     var work = document.getElementById("work");
     var footer = document.getElementById("footer");
-    if (image.src.match("Picture/1.png")) {
-        image.src = "Picture/black.JPG";
+    if (image.src.match("style/index_style/theme/1.png")) {
+        image.src = "style/index_style/theme/2.JPG";
         textonpicture.classList.remove("textonpicture-light");
         textonpicture.classList.add("textonpicture-dark");
         about.classList.remove("light-about");
@@ -44,7 +38,7 @@ function changeMode() {
         work.classList.add("dark-workandexperience");
     }
     else {
-        image.src = "Picture/1.png";
+        image.src = "style/index_style/theme/1.png";
         textonpicture.classList.remove("textonpicture-dark");
         textonpicture.classList.add("textonpicture-light");
         about.classList.remove("dark-about");
