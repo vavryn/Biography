@@ -24,7 +24,7 @@
    <header id="header">
       <div class="smalllogo">
          <a href="#welcome-section" class="logolink">
-            <a href="" id="changeMode"> Привет, я Вова</a>
+            <a href="home" id="changeMode"> Hey, I am Volodymyr</a>
          </a>
       </div>
       <button class="nav-toggle">
@@ -33,22 +33,38 @@
 
       <nav class="nav" id="navbar">
          <ul class="nav__list" id="navlinkitems">
-            <a style="position: absolute; left: 30px; top:20px;" onclick="changeMode()">
-               <h2> Привет, я Вова </h2>
+            <a style="position: absolute; left: 30px; top:20px;">
+               <h2> Hey, I am Volodymyr </h2>
             </a>
             <li class="nav__item">
-               <a href="#home-section" class="nav__link" id="home">Главная</a>
+               <a href="#home-section" class="nav__link" id="home">Home</a>
             </li>
             <li class="nav__item">
-               <a href="Experience.html" class="nav__link" id="service">Работы</a>
-            </li>
-
-            <li class="nav__item">
-               <a href="Photosession.html" class="nav__link" id="contact">Фотосессии</a>
+               <a href="Experience.html" class="nav__link" id="service">Experience</a>
             </li>
 
             <li class="nav__item">
-               <a href="#contacts-section" class="nav__link" id="contact">Связь</a>
+               <a href="Photosession.html" class="nav__link" id="contact">Photosession</a>
+            </li>
+
+            <li class="nav__item">
+               <a href="#contacts-section" class="nav__link" id="contact">Contact</a>
+            </li>
+
+            <li class="nav__item" id = "language">
+                  <a class="nav__link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Language
+                  </a>
+                  <ul class="dropdown-menu ">
+                     <li><a class="dropdown-item" href="#" style="display:flex; justify-content: space-between;">Čeština 
+                        <img src="assets/Flags/Cz.jpeg" height="25px" alt="cz_flag" style="border-radius: 4px;"></a>
+                     </li>
+                     <li class="d-flex">
+                        <a class="dropdown-item" href="#" style="display:flex; justify-content: space-between;">English<img src="assets/Flags/En.jpeg" height="25px" alt="en_flag" style="border-radius: 4px;"></a>
+                     </li>
+                     <li><a class="dropdown-item" href="#" style="display:flex; justify-content: space-between;">Українська <img src="assets/Flags/Ua.jpeg" height="25px" alt="ua_flag" style="border-radius: 4px;"> </a></li>
+                     <li><a class="dropdown-item" style = "display:flex; justify-content: space-between;" href="#">Русский  <div style = "height: 24px; background-color: black; border-radius: 5px; margin-left: 8px; width: 35px; border: 5px;"></div> </a></li>
+                  </ul>
             </li>
          </ul>
       </nav>
@@ -56,48 +72,40 @@
    </header>
 
 
-   <section>
+   <section id = "#home">
       <div style="background-color: black ;">
-         <img class="face" src="style/index_style/theme/1.png" alt="">
+         <img class="face" src="style/index_style/1.png" alt="">
       </div>
       <div class="textonpicture-light">
-         <h1> Привет, я Вова </h1>
-         <p>Программист, веб-дизайнер, психолог, <br> фотограф, копирайтер, ретушер <br> и хороший собеседник.</p>
+         <h1> Hey, I am Volodymyr </h1>
+         <p>Front-end developer, web-designer, psycholog, <br> photographer, ukrainian copywriter, retoucher <br>and good person.</p>
       </div>
    </section>
 
    <section id="#about">
       <div class="container">
          <div class="info">
-            <h2>Программирование и веб-дизайн</h2>
-            <p> Работаю с Figma и VS Code. Закончил стажировку в компании RexSoft. Я гумманитарий, поэтому я не работаю
-               с
-               back-end.
-               Front-end разработкой занимаюсь больше года.
-               Свой
-               первый
-               сайт сделал в 16 лет.</p>
+            <h2>Front-end developing and web design</h2>
+            <p> Work with Figma and Visual Code. I had end internship in company RexSoft. I have experience in this sphere ~ 2 years.
+            Developed first website when I was 16 years old. Working with HTML/CSS/JS using Frameworks (Bootstrap and ReactJS) and develop applications for PC on C# and C++.
+            You can find it in my <a href = "/Experience.html">portfolio</a>.</p>
          </div>
          <div class="info">
-            <h2>Психолог</h2>
-            <p>Психологией занимаюсь больше двух лет. Я не знаю важные термины, который должен знать каждый доктор,
-               потому что
-               я любитель. Работаю с практикой основаной на теории, которую пишут научных книгах. Я
-               любитель,
-               который может помочь людям.</p>
+            <h2>Psycholog</h2>
+            <p>I have been in psychology for over two years. I don't know the important terms that every doctor should know, that's why
+            I'm an amateur. I work with practice based on the theory that is written in scientific books. I am an amateur who can
+            help people in the company, or replace for a while HR.</p>
          </div>
          <div class="info">
-            <h2>Фотограф и ретушер</h2>
-            <p>Камера на которую я фотографирую и снимаю видео - Nikon D5100. Фотографией занимаюсь ~ 3 года.
-               Фотографирую
-               моделей, здание, салоны и
-               магазины для рекламы. Обрабатываю работы в Adobe Photoshop CC и Adobe Premier Pro CC. Фотографии можете
-               увидеть в моем портфолио.</p>
+            <h2>Photographer</h2>
+            <p>The camera on which I take pictures and shoot video is Nikon D5100. I have been doing photography for about 3 years.
+            Photographed models, building, salons and shops for advertising. I edit my work in Adobe Photoshop CC and Adobe Premier
+            Pro CC. Photos are available in my <a href = "/Experience.html"">portfolio</a>.</p>
          </div>
          <div class="info">
-            <h2>Образования</h2>
-            <p>Младший бакалавр программной инженирии от Хмельницкого политихничего колледжа. На этом не буду
-               останавливаться. </p>
+            <h2>Education</h2>
+            <p>Junior Bachelor of Software Engineering from <a href = "https://hpk.edu.ua/en/home/golovna-storinka">Khmelnitsky Polytechnic College </a>. Programmer studies will end in June 2023.
+            At the same time I study at the <a href = "https://fhs.cuni.cz/FHSENG-1.html">Charles University</a> in Prague. </p>
          </div>
       </div>
    </section>
@@ -109,34 +117,32 @@
             <div class="row">
                <div class="col-lg-4">
                   <div class="work">
-                     <h2> Работа и опыт</h2>
+                     <h2>Work and experience</h2>
                   </div>
                </div>
                <div class="col-lg-8">
                   <ul>
                      <div class="list-exp">
                         <li>
-                           <p> Один из моих
-                              сайтов стал сайт-визиткой для локального события в городе - MyFest </p>
+                           <p> One of my
+                           sites has become a business card site for a local event in the city - MyFest </p>
                         </li>
                      </div>
                      <div class="list-exp">
                         <li>
-                           <p> Написал сайт и программу для PC для бесплатного изучения языка - EasyGrammar </p>
+                           <p> Developed PC program for learning language in C# with MySQL (Czech and English) - EasyGrammar </p>
                         </li>
                      </div>
                      <div class="list-exp">
                         <li>
-                           <p> Писал статьи от компании Art Sites для продвижения интернет-магазина. Увеличил покупки
-                              товаров с
-                              помощью SEO-searching на 27.93% </p>
+                           <p>Worked in ukrainian company Art Sites copywriter to promote an online store. Up website on top in google search and we
+                           upped product purchases with SEO-search by 27.93% </p>
                         </li>
                      </div>
                      <div class="list-exp">
                         <li>
-                           <p> Делал комерчискую фотосессию салону красоты. Реклама разлетелась по социальным сетям и
-                              увеличила
-                              количество клиентов.</p>
+                           <p>I did a commercial photo shoot for a beauty salon. The advertisement spread across social networks and increased the
+                           number of customers.</p>
                         </li>
                      </div>
                   </ul>
@@ -151,8 +157,8 @@
          <a href="https://www.facebook.com/profile.php?id=100014713959867" class="light-link" target="_parent"
             id="link1">
             <span class="fa fa-facebook-square"></span></a>
-         <a href="https://twitter.com/elatedkrai" class="light-link" target="_parent" id="link2"><span
-               class="fa fa-twitter"></span></a>
+         <a href="https://www.linkedin.com/in/vladymyrvavrynchuk/" class="light-link" target="_parent" id="link2"><span
+               class="fa fa-linkedin"></span></a>
          <a href="https://www.instagram.com/elatedkrai/" class="light-link" target="_parent" id="link3"><span
                class="fa fa-instagram" id="link"></span></a>
          <a href="https://github.com/ElatedKrai" class="light-link" target="_parent" id="link4"><span
