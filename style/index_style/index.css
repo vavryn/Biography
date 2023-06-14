@@ -38,11 +38,10 @@ a
 .nav__link {
   color: inherit;
   text-decoration: none;
-  margin-right: 50px;
+  margin-right: 20px;
+  padding-bottom: 10px;
   position: relative;
   font-family: "Open Sans", sans-serif;
-  padding: 16px 0;
-  margin: 0 12px;
   letter-spacing: 1px;
   line-height: 16px;
   font-weight: 700;
@@ -354,36 +353,7 @@ section h2 {
   .list-exp>li{list-style: none;}
 }
 
-@media (max-width: 600px) {
-  .face {
-    opacity: 0.3;
-    height: 400px;
-    width: 100%
-  }
-  .textonpicture-light {
-    padding: 20px;
-    font-size: 17px;
-    top: 20%;
-    color: white;
-    
-  }
 
-  .textonpicture-light h1 {
-    font-size: 10vw;
-  }
-
-  .textonpicture-dark {
-    padding: 20px;
-    font-size: 17px;
-    top: 200px;
-    color: white;
-    
-  }
-
-  .textonpicture-dark h1 {
-    font-size: 5vh;
-  }
-}
 
 .work {
   margin: 0;
@@ -401,7 +371,7 @@ section h2 {
 }
 
 @media (max-width: 500px) {
-  .list-exp p {
+  .list-exp p, .experience__card__rightside p {
     font-size: 17px;
   }
   .textonpicture-light, .textonpicture-dark
@@ -531,3 +501,155 @@ section h2 {
    color: white;
 }
 
+.experience__header
+{
+  padding: 20px 0px;
+}
+
+.experience__card
+{
+  transition: .5s;
+  display: flex;
+width: 100%;
+background-color: #EEEEEE;
+border-radius: 70px;
+padding: 30px;}
+
+.experience__card__leftside
+{
+  
+  width: 50%;
+}
+
+.experience__card__rightside
+{
+  width: 50%;
+}
+
+
+.experience__card__leftside img
+{
+  transition: .5s;
+    transform: scale(1);
+  width:100%;
+  height: 300px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.experience__card__rightside__header h3
+{
+font-size: 26px;
+}
+
+.experience__card__rightside
+{
+  display: grid;
+  text-align: center;
+}
+
+.experience__card__rightside__describe p
+{
+  font-family: "Gill Sans",
+    "Gill Sans MT",
+    Calibri,
+    "Trebuchet MS",
+    sans-serif;
+  padding: 20px;;
+font-size: 20px;
+}
+
+.experience__card__rightside__pit
+{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.experience__card__rightside__pit img
+{
+width: 55px;
+height: 55px;
+}
+
+@media (max-width:767px) {
+  .experience__card__leftside, .experience__card__rightside
+  {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  
+  .experience__card
+  {
+    display: block;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .experience__card__leftside img {
+    height: 200px;
+  }
+
+  .face {
+    opacity: 0.3;
+    height: 400px;
+    width: 100%
+  }
+
+  .textonpicture-light {
+    padding: 20px;
+    font-size: 17px;
+    top: 20%;
+    color: white;
+
+  }
+
+  .textonpicture-light h1 {
+    font-size: 10vw;
+  }
+
+  .textonpicture-dark {
+    padding: 20px;
+    font-size: 17px;
+    top: 200px;
+    color: white;
+
+  }
+
+  .textonpicture-dark h1 {
+    font-size: 5vh;
+  }
+}
+
+@media (max-width:460px) {
+  .experience__card, .experience__card__leftside img
+  {
+    border-radius: 20px;
+  }
+  
+.experience__card__rightside__describe p
+{
+  padding: 10px;
+  font-size: 16px;
+}
+.experience__card__rightside__pit img
+{
+  width: 45px;
+  height: 45px;
+}
+}
+
+.experience__card:hover
+{
+  transition: .5s;
+  background-color: #000;
+  color: white;
+}
+
+.experience__card:hover .experience__card__leftside img
+{
+  transition: .5s;
+  /* scale */
+  transform: scale(1.06);
+}

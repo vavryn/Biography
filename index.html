@@ -15,7 +15,7 @@
       crossorigin="anonymous"></script>
    <link href='style/index_style/index.css' rel='stylesheet' type='text/css'>
    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-   <title>CV | Владимир Вавринчук</title>
+   <title>Vavrynchuk Volodymyr | Home</title>
 
 </head>
 
@@ -40,72 +40,65 @@
                <a href="#home-section" class="nav__link" id="home">Home</a>
             </li>
             <li class="nav__item">
-               <a href="Experience.html" class="nav__link" id="service">Experience</a>
-            </li>
-
-            <li class="nav__item">
                <a href="Photosession.html" class="nav__link" id="contact">Photosession</a>
             </li>
+
+<!-- li with a to link id about -->
+            <li class="nav__item">
+               <a href="#about-section" class="nav__link" id="contact">About</a>
+            </li>
+
 
             <li class="nav__item">
                <a href="#contacts-section" class="nav__link" id="contact">Contact</a>
             </li>
 
-            <li class="nav__item" id = "language">
+            
+
+            <!-- <li class="nav__item" id = "language">
                   <a class="nav__link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                      Language
                   </a>
                   <ul class="dropdown-menu ">
-                     <li><a class="dropdown-item" href="#" style="display:flex; justify-content: space-between;">Čeština 
+                     <li><a class="dropdown-item" href="Czech/index.html" style="display:flex; justify-content: space-between;">Čeština 
                         <img src="assets/Flags/Cz.jpeg" height="25px" alt="cz_flag" style="border-radius: 4px;"></a>
                      </li>
                      <li class="d-flex">
                         <a class="dropdown-item" href="#" style="display:flex; justify-content: space-between;">English<img src="assets/Flags/En.jpeg" height="25px" alt="en_flag" style="border-radius: 4px;"></a>
                      </li>
                      <li><a class="dropdown-item" href="#" style="display:flex; justify-content: space-between;">Українська <img src="assets/Flags/Ua.jpeg" height="25px" alt="ua_flag" style="border-radius: 4px;"> </a></li>
-                     <li><a class="dropdown-item" style = "display:flex; justify-content: space-between;" href="#">Русский  <div style = "height: 24px; background-color: black; border-radius: 5px; margin-left: 8px; width: 35px; border: 5px;"></div> </a></li>
                   </ul>
-            </li>
+            </li> -->
          </ul>
       </nav>
 
    </header>
 
 
-   <section id = "#home">
+   <section id = "home-section">
       <div style="background-color: black ;">
          <img class="face" src="style/index_style/1.png" alt="">
       </div>
       <div class="textonpicture-light">
          <h1> Hey, I am Volodymyr </h1>
-         <p>Front-end developer, web-designer, psycholog, <br> photographer, ukrainian copywriter, retoucher <br>and good person.</p>
+         <p>Front-end developer, web-designer, student, <br> photographer, ukrainian copywriter, retoucher <br>and good person.</p>
       </div>
    </section>
 
-   <section id="#about">
+   <section id="about-section">
       <div class="container">
          <div class="info">
             <h2>Front-end developing and web design</h2>
             <p> Work with Figma and Visual Code. I had end internship in company RexSoft. I have experience in this sphere ~ 2 years.
             Developed first website when I was 16 years old. Working with HTML/CSS/JS using Frameworks (Bootstrap and ReactJS) and develop applications for PC on C# and C++.
-            You can find it in my <a href = "/Experience.html">portfolio</a>.</p>
-         </div>
-         <div class="info">
-            <h2>Psycholog</h2>
-            <p>I have been in psychology for over two years. I don't know the important terms that every doctor should know, that's why
-            I'm an amateur. I work with practice based on the theory that is written in scientific books. I am an amateur who can
-            help people in the company, or replace for a while HR.</p>
+            You can find it <a href = "/#experience">below</a>.</p>
+            <p>Junior Speacialst of Software Engineering from <a href = "https://hpk.edu.ua/en/home/golovna-storinka">Khmelnitsky Polytechnic College </a>. Now I am studying in the <a href = "https://fhs.cuni.cz/FHSENG-1.html">Charles University</a> on Faculty of Humanities in Prague. </p>
          </div>
          <div class="info">
             <h2>Photographer</h2>
-            <p>The camera on which I take pictures and shoot video is Nikon D5100. I have been doing photography for about 3 years.
-            Photographed models, building, salons and shops for advertising. I edit my work in Adobe Photoshop CC and Adobe Premier
+            <p>The camera on which I take pictures and shoot video - Nikon D5100. I have been doing photography 5 years.
+            Photographed models, building, salons of beauty and shops for advertising. My editing workspace is Adobe Photoshop CC and Adobe Premier
             Pro CC. Photos are available in my <a href = "/Experience.html"">portfolio</a>.</p>
-         </div>
-         <div class="info">
-            <h2>Education</h2>
-            <p>Junior Bachelor of Software Engineering from <a href = "https://hpk.edu.ua/en/home/golovna-storinka">Khmelnitsky Polytechnic College </a>. Programmer studies will end in June 2023.
-            At the same time I study at the <a href = "https://fhs.cuni.cz/FHSENG-1.html">Charles University</a> in Prague. </p>
          </div>
       </div>
    </section>
@@ -152,7 +145,38 @@
       </div>
    </section>
 
-   <footer class="light-footer" id="footer">
+
+   <section id="#experience">
+      <div class="container">
+         <div class="experience__header">
+            <h2> Experience</h2>
+         </div>
+         
+         <a class="experience__card" href="https://elatedkrai.github.io/AutoMobhil/">
+            <div class="experience__card__leftside">
+               <img src="assets/Cards/AutoMobhil.png" alt="">
+            </div>
+            <div class="experience__card__rightside">
+               <div class="experience__card__rightside__header">
+                  <h3>Mobhil. eCommerce</h3>
+               </div>
+               <div class="experience__card__rightside__describe">
+                  <p>A site similar to other marketplaces for buying cars. This is a layout, so the functionality in it minimum.  The layout was taken from e-commerce.</p>
+               </div> 
+
+               <div class="experience__card__rightside__pit">
+                  <img src="assets/Icons/HTML-icon.png" alt="">
+                  <img src="assets/Icons/CSS-icon.png" alt="">
+                  <img src="assets/Icons/JS-icon.png" alt="" >
+                  <img src="assets/Icons/JQuary-icon.png" alt="">
+               </div>
+            </div>
+         </a>
+
+      </div>
+   </section>
+
+   <footer class="light-footer" id="contacts-section">
       <div class="social">
          <a href="https://www.facebook.com/profile.php?id=100014713959867" class="light-link" target="_parent"
             id="link1">
